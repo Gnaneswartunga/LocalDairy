@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LocalDairy AddUser</title>
+<style type="text/css">
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<style type="text/css">
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+	padding: 0;
+}
+
+nav {
+	background-color: #ffb62e;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	padding-left: 80px;
+	font-size: 20px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+h1 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+  <h1>LocalDairy Administration</h1>
+</div>
+
+<nav>
+  <a href="clintmanage.jsp">Add Milk Details</a> 
+  <a href="userslist.jsp">Monthly Manage</a>
+  <a href="users.jsp">Users</a>
+  <a href="display.jsp">Amount Details</a>
+</nav>
+</body>
+
+<body>
+	<h2>Add Customer</h2>
+    <form action="AddUser" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" placeholder="Enter Only First Name" id="name" name="fullname" required><br>
+        <label for="phoneno">Phone No:</label><br>
+        <input type="text" placeholder="Enter Contact No" id="phoneno" name="phoneno" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" placeholder="Enter Address" id="address" name="address" required><br>
+        <input type="submit" value="Submit">
+    </form>
+	
+</body>
+
+</html>
