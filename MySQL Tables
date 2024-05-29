@@ -1,0 +1,22 @@
+create table users
+(
+UserId int primary key auto_increment,
+FullName varchar(25) not null,
+PhoneNo bigint not null,
+Address varchar(50) not null
+);
+
+------------------------------------------
+
+
+
+create table milk
+(
+Id int primary key auto_increment,
+UserIds int not null,
+Name varchar(25) not null,
+Liters double not null,
+Date varchar(25) not null,
+Price double not null,
+foreign key(UserIds) references users(UserId)
+);
